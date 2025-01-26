@@ -2,7 +2,7 @@
 
 **May's Journey** é um jogo 2D que combina elementos de narrativa, RPG e gerenciamento, onde o jogador acompanha a trajetória de **May**, uma jovem determinada a superar desafios e alcançar um objetivo audacioso: tornar-se a primeira mulher a presidir um tradicional escritório de contabilidade.
 ![may](https://github.com/user-attachments/assets/8d038f95-b9a5-481c-af9b-5acba8da4d61)
-
+![may_2d](https://github.com/TrueFinal/May-s-Journey/blob/main/May/Calma.png)
 
 ## 📖 Sinopse
 May, uma jovem de 19 anos, acaba de começar seu primeiro emprego como técnica de TI em um tradicional escritório de contabilidade. Acostumada a viver à sombra das expectativas alheias, seu único objetivo inicial é passar despercebida e sobreviver ao ambiente de trabalho. 
