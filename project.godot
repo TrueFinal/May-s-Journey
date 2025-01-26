@@ -10,9 +10,14 @@ config_version=5
 
 [application]
 
-config/name="Código Fonte"
+config/name="May's Journey"
+config/version="Beta 1.0"
 run/main_scene="res://Scenes/level_1.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
+boot_splash/bg_color=Color(0.512709, 0.194829, 0.131272, 1)
+boot_splash/image="res://Assets/logo/logo2.png"
+config/icon="res://Assets/logo/logo2.png"
+boot_splash/minimum_display_time=5000
 
 [display]
 

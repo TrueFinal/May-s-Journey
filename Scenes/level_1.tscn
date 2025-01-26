@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://5xbug14t8i3o"]
+[gd_scene load_steps=13 format=3 uid="uid://5xbug14t8i3o"]
 
 [ext_resource type="Texture2D" uid="uid://djskenfg58vte" path="res://Assets/Map/tilemap.png" id="1_hehck"]
 [ext_resource type="PackedScene" uid="uid://d4kfog2ofg60t" path="res://Scenes/player.tscn" id="2_vshlk"]
@@ -6621,6 +6621,24 @@ texture_region_size = Vector2i(35, 45)
 tile_size = Vector2i(35, 40)
 sources/0 = SubResource("TileSetAtlasSource_2txdi")
 
+[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_ey6b7"]
+stream_count = 1
+stream_0 = ExtResource("3_7ird7")
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ay51o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ljr1o"]
+size = Vector2(1784.5, 23)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cgeo7"]
+size = Vector2(23, 870)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fli6w"]
+size = Vector2(1809.5, 21)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y3tsd"]
+size = Vector2(20, 889)
+
 [node name="Level 1" type="Node2D"]
 position = Vector2(933, 489)
 
@@ -6670,8 +6688,11 @@ polygon = PackedVector2Array(-787, -242, -703, -242, -703, -189, -787, -189)
 [node name="mesa9" type="CollisionPolygon2D" parent="Mesas"]
 polygon = PackedVector2Array(689, -242, 752, -242, 752, -192, 689, -192)
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Mesas"]
+[node name="mesa10" type="CollisionPolygon2D" parent="Mesas"]
 polygon = PackedVector2Array(522, -240, 516, -240, 509, -238, 501, -234, 495, -228, 491, -220, 490, -210, 495, -202, 506, -196, 522, -193, 537, -195, 548, -202, 552, -208, 552, -222, 547, -230, 540, -236, 533, -239, 527, -240)
+
+[node name="mesa11" type="CollisionPolygon2D" parent="Mesas"]
+polygon = PackedVector2Array(547, 86, 696, 86, 695, 187, 548, 189)
 
 [node name="Paredes" type="StaticBody2D" parent="."]
 
@@ -6695,13 +6716,13 @@ polygon = PackedVector2Array(-867, -333, -44, -332, -44, -343, -866, -342)
 polygon = PackedVector2Array(-45, -402, -45, -332, 409, -332, 409, -404)
 
 [node name="parede7" type="CollisionPolygon2D" parent="Paredes"]
-polygon = PackedVector2Array(409, -402, 408, -131, 408, -90, 492, -91, 492, -123, 550, -123, 550, -90, 691, -90, 691, -122, 750, -122, 750, -90, 776, -90, 776, -73, 806, -73, 805, -140, 635, -140, 635, -333, 607, -333, 606, -140, 437, -140, 437, -402)
+polygon = PackedVector2Array(409, -404, 409, -89, 491, -90, 490, -140, 439, -140, 437, -403)
 
 [node name="parede8" type="CollisionPolygon2D" parent="Paredes"]
 polygon = PackedVector2Array(437, -332, 806, -333, 805, 443, 834, 443, 834, -342, 437, -342)
 
 [node name="parede9" type="CollisionPolygon2D" parent="Paredes"]
-polygon = PackedVector2Array(606, 9, 606, -21, 664, -21, 664, 10, 705, 10, 705, 18, 712, 23, 718, 23, 722, 22, 726, 19, 726, 24, 771, 24, 771, 6, 805, 6, 805, -41, 408, -42, 409, 287, 805, 286, 805, 237, 437, 237, 438, 8)
+polygon = PackedVector2Array(665, 8, 665, -41, 806, -42, 805, 5, 797, 5, 797, 24, 770, 24, 729, 24, 716, 23, 706, 18, 704, 8)
 
 [node name="parede10" type="CollisionPolygon2D" parent="Paredes"]
 polygon = PackedVector2Array(409, 442, 436, 442, 437, 390, 550, 390, 550, 401, 578, 401, 578, 413, 607, 413, 607, 380, 665, 380, 665, 413, 693, 413, 693, 390, 805, 390, 805, 362, 410, 362)
@@ -6709,8 +6730,23 @@ polygon = PackedVector2Array(409, 442, 436, 442, 437, 390, 550, 390, 550, 401, 5
 [node name="parede11" type="CollisionPolygon2D" parent="Paredes"]
 polygon = PackedVector2Array(-358, 442, -386, 442, -386, 414, -869, 413, -868, 363, -359, 362)
 
-[node name="parede_entrada" type="CollisionPolygon2D" parent="Paredes"]
-polygon = PackedVector2Array(-358, 362, -358, 413, -17, 413, -17, 380, 40, 380, 40, 413, 409, 413, 409, 362)
+[node name="parede12" type="CollisionPolygon2D" parent="Paredes"]
+polygon = PackedVector2Array(551, -91, 551, -140, 606, -140, 606, -293, 437, -291, 437, -332, 806, -333, 807, -291, 635, -290, 635, -140, 692, -140, 691, -91)
+
+[node name="parede13" type="CollisionPolygon2D" parent="Paredes"]
+polygon = PackedVector2Array(749, -90, 777, -90, 777, -72, 805, -72, 805, -140, 749, -142)
+
+[node name="parede14" type="CollisionPolygon2D" parent="Paredes"]
+polygon = PackedVector2Array(409, -292, -387, -292, -387, -331, 409, -331)
+
+[node name="parede15" type="CollisionPolygon2D" parent="Paredes"]
+polygon = PackedVector2Array(605, 7, 606, -42, 408, -42, 409, 287, 806, 286, 806, 237, 437, 239, 438, 6)
+
+[node name="parede_entrada_1" type="CollisionPolygon2D" parent="Paredes"]
+polygon = PackedVector2Array(-19, 412, -19, 361, -360, 362, -359, 411)
+
+[node name="parede_entrada_2" type="CollisionPolygon2D" parent="Paredes"]
+polygon = PackedVector2Array(41, 411, 408, 412, 410, 362, 40, 362)
 
 [node name="Miscelanious" type="StaticBody2D" parent="."]
 
@@ -6733,24 +6769,39 @@ polygon = PackedVector2Array(-527, -243, -527, -223, -527, -212, -415, -212, -41
 polygon = PackedVector2Array(-555, -268, -528, -268, -528, -278, -499, -278, -499, -274, -471, -274, -471, -278, -416, -278, -416, -305, -414, -311, -414, -332, -493, -332, -500, -327, -500, -315, -556, -315)
 
 [node name="May" parent="." instance=ExtResource("2_vshlk")]
-position = Vector2(69, 443)
+position = Vector2(8, 435)
 speed = 150
 
 [node name="Camera2D" type="Camera2D" parent="May"]
 position = Vector2(0, -34)
 zoom = Vector2(3, 3)
-limit_left = -9999971
 limit_smoothed = true
-drag_vertical_offset = -1.0
-drag_left_margin = 1.0
-drag_top_margin = 1.0
-drag_right_margin = 1.0
-drag_bottom_margin = 0.27
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_7ird7")
+stream = SubResource("AudioStreamPlaylist_ey6b7")
+autoplay = true
 mix_target = 2
-playback_type = 1
 
 [node name="Tavares" parent="." instance=ExtResource("4_ore21")]
 position = Vector2(744, 102)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+disable_mode = 1
+collision_layer = 3
+physics_material_override = SubResource("PhysicsMaterial_ay51o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-17.25, 454.5)
+shape = SubResource("RectangleShape2D_ljr1o")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-922.5, 33)
+shape = SubResource("RectangleShape2D_cgeo7")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-29.75, -412.5)
+shape = SubResource("RectangleShape2D_fli6w")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(885, 21.5)
+shape = SubResource("RectangleShape2D_y3tsd")
