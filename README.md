@@ -61,4 +61,3 @@ Para dúvidas ou sugestões, entre em contato:
 ---
 
 ✨ _A jornada de May é uma homenagem a todas as pessoas que enfrentam desafios diários em busca de seus sonhos._
-# May-s-Journey
