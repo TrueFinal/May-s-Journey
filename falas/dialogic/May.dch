@@ -7,25 +7,15 @@
 "prefix": "",
 "sound_mood_default": "",
 "sound_moods": {},
-"style": "New_File",
+"style": "",
 "suffix": ""
 },
-"default_portrait": "May",
-"description": "				",
+"default_portrait": "",
+"description": "",
 "display_name": "May",
 "mirror": false,
-"nicknames": ["May"],
+"nicknames": [""],
 "offset": Vector2(0, 0),
-"portraits": {
-"May": {
-"export_overrides": {
-"image": "\"res://portraits/May.png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-}
-},
-"scale": 0.5
+"portraits": {},
+"scale": 1.0
 }

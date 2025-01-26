@@ -10,22 +10,12 @@
 "style": "",
 "suffix": ""
 },
-"default_portrait": "Chefe Josue",
+"default_portrait": "",
 "description": "",
-"display_name": "Chefe Josue",
+"display_name": "Josue",
 "mirror": false,
-"nicknames": ["Chefe Josue"],
+"nicknames": [""],
 "offset": Vector2(0, 0),
-"portraits": {
-"Chefe Josue": {
-"export_overrides": {
-"image": "\"res://portraits/boss_Josue.png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-}
-},
+"portraits": {},
 "scale": 1.0
 }
