@@ -12,8 +12,4 @@ config_version=5
 
 config/name="Código Fonte"
 config/features=PackedStringArray("4.3", "Mobile")
-config/icon="res://icon.svg"
-
-[rendering]
-
-renderer/rendering_method="mobile"
+config/icon="res://Assets/icon.svg"
