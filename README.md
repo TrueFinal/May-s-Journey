@@ -63,3 +63,37 @@ Para dúvidas ou sugestões, entre em contato:
 ---
 
 ✨ _A jornada de May é uma homenagem a todas as pessoas que enfrentam desafios diários em busca de seus sonhos._
+
+# May's Journey
+
+**May's Journey** is a 2D game that combines elements of narrative, RPG, and management, where the player follows the story of **May**, a young woman determined to overcome challenges and achieve an audacious goal: to become the first woman to lead a traditional accounting firm.
+![may](https://github.com/user-attachments/assets/8d038f95-b9a5-481c-af9b-5acba8da4d61)
+
+## 📖 Synopsis
+May, a 19-year-old young woman, has just started her first job as an IT technician in a traditional accounting firm. Used to living under the shadow of others' expectations, her only initial goal is to go unnoticed and survive the workplace environment.
+
+However, everything changes when she witnesses a situation that challenges her self-esteem and competence: her boss begins to belittle her skills, with subtle actions that gradually intensify. This event awakens something in May that she never imagined she had — a burning ambition to prove her worth and break barriers.
+
+Determined, she decides to go beyond merely keeping her job and sets an ambitious goal: to become the first woman to occupy the company's presidency. But to achieve this, May will have to face personal, professional, and cultural challenges that will test her limits and resilience in a journey of transformation and overcoming obstacles.
+
+---
+
+## 🎮 Key Features
+- **Immersive Narrative**: Discover the ups and downs of May's journey in a corporate environment full of challenges and impactful decisions.
+- **Career Progression**: Manage tasks, face adversities, and make decisions that shape her trajectory within the company.
+- **Personal Development**: Witness May's growth as she confronts prejudice, improves her skills, and builds meaningful relationships.
+- **Unique Visual Style**: Inspired by titles like Stardew Valley, Terraria, and classic RPGs like Pokémon FireRed.
+
+---
+
+## 🚀 Technologies Used
+- **Engine**: Godot 4
+- **Script Language**: GDScript
+- **Design and Art**: Pixel Art inspired by retro games
+
+---
+
+## 📂 How to Run the Project
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/seu-usuario/mays-journey.git
