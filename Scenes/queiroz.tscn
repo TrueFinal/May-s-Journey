@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://niib3euaeprv"]
+
+[ext_resource type="Texture2D" uid="uid://dvvqdcfuk0xu2" path="res://Assets/boss/boss_Queiroz.png" id="1_x6ld5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_awid2"]
+radius = 189.518
+
+[node name="May" type="CharacterBody2D"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(71, -77)
+shape = SubResource("CircleShape2D_awid2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(5, -247)
+texture = ExtResource("1_x6ld5")

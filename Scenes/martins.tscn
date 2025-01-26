@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bpf85b4ohm8ee"]
+
+[ext_resource type="Script" path="res://Scripts/player_movement.gd" id="1_t5hp0"]
+[ext_resource type="Texture2D" uid="uid://dfl6bo6au2ukf" path="res://Assets/boss/boss_Martins.png" id="2_seh5r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i04us"]
+size = Vector2(224, 34)
+
+[node name="Martins" type="CharacterBody2D"]
+collision_layer = 2
+script = ExtResource("1_t5hp0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(11, -11)
+shape = SubResource("RectangleShape2D_i04us")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(5.00003, -62)
+scale = Vector2(0.472656, 0.460938)
+texture = ExtResource("2_seh5r")

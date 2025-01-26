@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bo1qbppvxofwr"]
+
+[ext_resource type="Texture2D" uid="uid://yarf33urptb6" path="res://Assets/boss/boss_Tavares.png" id="1_7kufy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ohvu6"]
+radius = 25.0799
+
+[node name="Tavares" type="CharacterBody2D"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -11)
+shape = SubResource("CircleShape2D_ohvu6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.999998, -39)
+scale = Vector2(0.150391, 0.151367)
+texture = ExtResource("1_7kufy")

@@ -1,6 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://5xbug14t8i3o"]
+[gd_scene load_steps=7 format=3 uid="uid://5xbug14t8i3o"]
 
 [ext_resource type="Texture2D" uid="uid://djskenfg58vte" path="res://Assets/Map/tilemap.png" id="1_hehck"]
+[ext_resource type="PackedScene" uid="uid://d4kfog2ofg60t" path="res://Scenes/player.tscn" id="2_vshlk"]
+[ext_resource type="AudioStream" uid="uid://v0w1tpnyosxh" path="res://biblioteca_sonora/trilha may.wav" id="3_7ird7"]
+[ext_resource type="PackedScene" uid="uid://bo1qbppvxofwr" path="res://Scenes/tavares.tscn" id="4_ore21"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2txdi"]
 texture = ExtResource("1_hehck")
@@ -6619,6 +6622,7 @@ tile_size = Vector2i(35, 40)
 sources/0 = SubResource("TileSetAtlasSource_2txdi")
 
 [node name="Level 1" type="Node2D"]
+position = Vector2(933, 489)
 
 [node name="Tilemaps" type="Node2D" parent="."]
 
@@ -6727,3 +6731,26 @@ polygon = PackedVector2Array(-527, -243, -527, -223, -527, -212, -415, -212, -41
 
 [node name="Cozinha" type="CollisionPolygon2D" parent="Miscelanious"]
 polygon = PackedVector2Array(-555, -268, -528, -268, -528, -278, -499, -278, -499, -274, -471, -274, -471, -278, -416, -278, -416, -305, -414, -311, -414, -332, -493, -332, -500, -327, -500, -315, -556, -315)
+
+[node name="May" parent="." instance=ExtResource("2_vshlk")]
+position = Vector2(69, 443)
+speed = 150
+
+[node name="Camera2D" type="Camera2D" parent="May"]
+position = Vector2(0, -34)
+zoom = Vector2(3, 3)
+limit_left = -9999971
+limit_smoothed = true
+drag_vertical_offset = -1.0
+drag_left_margin = 1.0
+drag_top_margin = 1.0
+drag_right_margin = 1.0
+drag_bottom_margin = 0.27
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_7ird7")
+mix_target = 2
+playback_type = 1
+
+[node name="Tavares" parent="." instance=ExtResource("4_ore21")]
+position = Vector2(744, 102)
