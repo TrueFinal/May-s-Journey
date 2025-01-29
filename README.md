@@ -1,4 +1,4 @@
-# May's Journey
+# ✨ May's Journey ✨
 
 **May's Journey** é um jogo 2D que combina elementos de narrativa, RPG e gerenciamento, onde o jogador acompanha a trajetória de **May**, uma jovem determinada a superar desafios e alcançar um objetivo audacioso: tornar-se a primeira mulher a presidir um tradicional escritório de contabilidade.
 ![may](https://github.com/user-attachments/assets/8d038f95-b9a5-481c-af9b-5acba8da4d61)
@@ -38,6 +38,19 @@ Determinada, ela decide ir além de simplesmente se manter no emprego e traça u
 
 ---
 
+## 🕹️ Como Baixar o Jogo
+
+1. Acesse a página do repositório no [GitHub](https://github.com/TrueFinal/May-s-Journey).
+2. Clique na aba **Releases** (Releases) para ver as versões mais recentes.
+3. Faça o download do arquivo `May-s-Journey-vX.X.exe` para Windows.
+
+## 🪟 Como Rodar no Windows
+
+1. Após o download, clique no arquivo `.exe` para iniciar o jogo.
+2. Certifique-se de que seu sistema possui as dependências necessárias para rodar o jogo.
+
+---
+
 ## 💡 Planejamento Futuro
 - Implementação de mecânicas de escolhas com impacto na narrativa.
 - Expansão das áreas exploráveis do jogo.
@@ -58,11 +71,11 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull re
 ## 📬 Contato
 Para dúvidas ou sugestões, entre em contato:
 - **Email**: murillogyn2023@gmail.com
-- **GitHub**: [NeonF22](https://github.com/NeonF22), [Truefinal](https://github.com/TrueFinal)
+- **GitHub**: [NeonF22](https://github.com/NeonF22), [Truefinal](https://github.com/TrueFinal), [CostaMAyssa](https://github.com/CostaMAyssa), [Vitormesq](https://github.com/Vitormesq), [amiamiia](https://github.com/amiamiia)
 
 ---
 
-✨ _A jornada de May é uma homenagem a todas as pessoas que enfrentam desafios diários em busca de seus sonhos._
+✨ _A jornada de May é uma homenagem a todas as mulheres que enfrentam desafios diários em busca de seus sonhos._
 
 # May's Journey
 

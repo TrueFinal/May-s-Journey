@@ -19,10 +19,6 @@ boot_splash/image="res://Assets/logo/logo2.png"
 config/icon="res://Assets/logo/logo2.png"
 boot_splash/minimum_display_time=5000
 
-[autoload]
-
-Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
-
 [dialogic]
 
 directories/dch_directory={
@@ -68,10 +64,6 @@ window/size/viewport_height=1080
 window/size/initial_position_type=0
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
-
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
 
 [input]
 
